@@ -24,7 +24,7 @@ def get_product(id):
     return jsonify(product)
 
 # Example request - http://localhost:5000/products - with method POST
-@app.route('/products', methods=['PUT'])
+@app.route('/products', methods=['POST'])
 def add_product():
     products.append(request.get_json())
     return '', 201
